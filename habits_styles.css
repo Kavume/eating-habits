@@ -8,7 +8,7 @@
     color: #3c3c3c;
 }
 
-.nav-bar{
+.nav-bar {
     margin: 10px 160px;
     display: flex;
     flex-direction: row;
@@ -63,7 +63,6 @@ section {
 
 .title__select {
     color: #bbbbbb;
-
 }
 
 .first-section__subtitle {
@@ -112,6 +111,10 @@ section {
     cursor: pointer;
 }
 
+.button--primary:active {
+    background-image: linear-gradient(to right, #bbbbbb, #e7e7e7);
+}
+
 .button--icon__wrap {
     display: flex;
     flex-direction: row;
@@ -124,7 +127,6 @@ section {
     letter-spacing: .05rem;
     color: #545454;
 }
-
 
 .ad {
     display: flex;
@@ -148,10 +150,9 @@ section {
     transition: 0.3s opacity 0ms linear;
 }
 
-
 .brand-image__background {
-    height: 680px;
-    width: 640px;
+    height: 70vh;
+    width: 32vw;
     border-radius: 360px 360px 90px 90px;
     border: 32px solid #f9f9f9;
     background-image: linear-gradient(to right bottom, #eeeeee, #bbbbbb);
@@ -159,14 +160,334 @@ section {
     top: 260px;
     right: 160px;
     box-shadow: 0 40px 100px #bbbbbb;
+    transition: 0.3s all 0ms linear;
 }
 
 .background__mainscreen {
     height: 1000px;
     width: 100vw;
-    background-image:linear-gradient(to right bottom, #f7f7f7 70%, #bbbbbb);
+    background-image: linear-gradient(to right bottom, #f7f7f7 70%, #bbbbbb);
     position: absolute;
     top: 0;
     z-index: -1;
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1480px) {
+    .brand-image__background {
+        border: 30px solid #f9f9f9;
+        /*top: 340px;*/
+        transition: 0.3s all 0ms linear;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1080px) {
+
+    .nav-bar {
+        margin: 10px 100px;
+    }
+
+    .img_logo {
+        height: 104px;
+    }
+
+    .nav-bar__links-wrap {
+        gap: 48px;
+    }
+
+    .nav-bar__link {
+        font-size: 1.2rem;
+    }
+
+    section {
+        margin: 80px 100px;
+    }
+
+    .first-section__content-wrap {
+        gap: 64px;
+        width: 480px;
+    }
+
+    .first-section__title {
+        font-size: 4.2rem;
+    }
+
+    .first-section__subtitle {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        letter-spacing: 0.03rem;
+    }
+
+    .button__wrap {
+        gap: 48px;
+    }
+
+    .button--primary {
+        padding: 18px 28px;
+        font-size: 1rem;
+    }
+
+    .button--icon {
+        padding: 20px 18px 18px 22px;
+    }
+
+    .button__icon {
+        height: 16px;
+    }
+
+    .button--primary:hover, .button--icon:hover {
+        box-shadow: 0 20px 30px #bbbbbb;
+    }
+
+    .button--icon__wrap {
+        gap: 16px;
+    }
+
+    .button--icon__text {
+        font-size: 1.1rem;
+        letter-spacing: 0;
+    }
+
+    .ad {
+        gap: 32px;
+        padding: 40px 100px;
+        margin: 40px 0;
+    }
+
+    .ad__logo {
+        height: 30px;
+    }
+
+    .brand-image__background {
+        border-radius: 360px 360px 70px 70px;
+        border: 28px solid #f9f9f9;
+        /*top: 270px;*/
+        height: 420px;
+        width: 380px;
+        right: 100px;
+        box-shadow: 0 30px 60px #bbbbbb;
+        transition: 0.3s all 0ms linear;
+    }
+
+    .background__mainscreen {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 769px) {
+
+    .nav-bar {
+        margin: 10px 80px;
+    }
+
+    .img_logo {
+        height: 90px;
+    }
+
+    .nav-bar__links-wrap {
+        gap: 24px;
+    }
+
+    .nav-bar__link {
+        font-size: 1.1rem;
+    }
+
+    section {
+        margin: 60px 80px;
+
+    }
+
+    .first-section__content-wrap {
+        gap: 56px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .first-section__title {
+        font-size: 3.4rem;
+        text-align: center;
+
+    }
+
+    .first-section__subtitle {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.02rem;
+        text-align: center;
+    }
+
+    .button__wrap {
+        gap: 28px;
+        justify-content: center;
+    }
+
+    .button--primary {
+        padding: 16px 24px;
+        font-size: 0.9rem;
+    }
+
+    .button--icon {
+        padding: 16px 16px 16px 20px;
+    }
+
+    .button__icon {
+        height: 12px;
+    }
+
+    .button--primary:hover, .button--icon:hover {
+        box-shadow: 0 20px 30px #bbbbbb;
+    }
+
+    .button--icon__wrap {
+        gap: 12px;
+    }
+
+    .button--icon__text {
+        font-size: 0.9rem;
+    }
+
+    .ad {
+        gap: 26px;
+        padding: 32px 80px;
+        margin: 32px 0;
+    }
+
+    .ad__logo {
+        height: 24px;
+    }
+
+    .brand-image__background {
+        border: 18px solid #f9f9f9;
+        /*top: 160px;*/
+        right: 80px;
+    }
+
+    .background__mainscreen {
+        background-image: linear-gradient(to right bottom, #f7f7f7 50%, #ebebeb);
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 769px) {
+
+    section {
+        margin: 40px 80px;
+    }
+
+    .first-section__content-wrap {
+        gap: 56px;
+        width: 580px;
+        flex-wrap: nowrap;
+    }
+
+    .first-section__title {
+        text-align: center;
+    }
+
+    .button__wrap {
+        gap: 28px;
+        justify-content: center;
+    }
+
+    .brand-image__background {
+        display: none;
+    }
+
+    .background__mainscreen {
+        background-image: linear-gradient(to right bottom, #f7f7f7 70%, #d5d5d5);
+    }
+
+    .ad {
+        justify-content: center;
+        background-image: linear-gradient(to right, #f1f1f1 , #e2e2e2, #f1f1f1);
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+
+    .nav-bar {
+        margin: 10px 60px;
+    }
+
+    .img_logo {
+        height: 90px;
+    }
+
+    .nav-bar__links-wrap {
+        display: none;
+    }
+
+    .nav-bar__link {
+        font-size: 1.1rem;
+    }
+
+    section {
+        margin: 40px 0;
+    }
+
+    .first-section__content-wrap {
+        gap: 56px;
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .first-section__title {
+        font-size: 3.4rem;
+        text-align: center;
+    }
+
+    .first-section__subtitle {
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.02rem;
+    }
+
+    .button__wrap {
+        gap: 28px;
+        justify-content: center;
+    }
+
+    .button--primary {
+        padding: 16px 24px;
+        font-size: 0.9rem;
+        transition: none;
+    }
+
+    .button--icon {
+        padding: 16px 16px 16px 20px;
+    }
+
+    .button__icon {
+        height: 12px;
+    }
+
+    .button--primary:hover, .button--icon:hover {
+        box-shadow: none;
+        transition: none;
+        transform: none;
+    }
+
+    .ad {
+        padding: 24px 0;
+        margin: 32px 0;
+        gap: 32px;
+        justify-content: center;
+        background-image: linear-gradient(to right, #f1f1f1 , #e2e2e2, #f1f1f1);
+    }
+
+    .ad__logo {
+        height: 20px;
+    }
+
+    .brand-image__background {
+       display: none;
+    }
+
+    .background__mainscreen {
+        height: 520px;
+        background-image: linear-gradient(to right bottom, #f7f7f7 70%, #d5d5d5);
+    }
 }
 
